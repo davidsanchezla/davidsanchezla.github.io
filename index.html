@@ -1,81 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <link rel="stylesheet" href="../css/folio.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum</title>
+  <title>David Sánchez Lavado — Full Stack Developer & Tech Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="David Sánchez Lavado — Portfolio">
+  <meta property="og:description" content="Desarrollador Full Stack especializado en aplicaciones multiplataforma. Java | Python | C# | Kotlin">
+  <meta name="theme-color" content="#1a1a2e">
 </head>
-
 <body>
-  <nav>
-    <img class="imagen" src="../imagenes/personas.png" alt="">
-    <a href="#Sm" class="encabezado">Sobre mí</a>
-    <a href="#Ap" class="encabezado">Aptitudes</a>
-    <a href="#Sk" class="encabezado">Skills</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">David Sánchez</a>
+      <ul class="nav-menu">
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
   </nav>
-  <hr class="separacion">
-  <section class="nombre">
-    <h2 class="completo">David Sánchez Lavado</h2>
-    <p class="hastag">#estudiante</p>
-    <a class="redes_sociales" href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a class="redes_sociales" href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
-    <a class="redes_sociales" href="https://es.linkedin.com/" target="_blank">Linkedin</a>
-  </section>
 
-  <hr class="separacion">
-
-  <section class="sobre_mi">
-
-    <div class="izq">
-      <h1 id="Sm">Sobre mí</h1>
-      <p class="contenido">Actualmente estoy cursando 2º de SMR en el instituto Alonso de Avellaneda, me gustaría
-        adentrarme al mundo laboral para ganar práctica y experiencia a mi persona, lo que más me gusta es la
-        prográmacion y aprender sobre ella.</p>
-      <hr class="sep_izq">
-      <h1 id="Ap">Aptitudes</h1>
-      <p class="contenido">Mis mayores aptitudes son el <strong class="apt">Trabajo en equipo</strong> ya que siempre he
-        estado
-        acostumbrado a trabajar con gente, la <strong class="apt">Responsabilidad</strong> tambien es mi fuerte no fallo
-        con inguna
-        entrega y tiempo de llegada, Soy <strong class="apt">Flexible</strong> y tengo <strong
-          class="apt">Liderazgo</strong> puedo hacer todo
-        lo que se me pida añadiento ser la cabeza de un grupo</p>
-    </div>
-
-    <div class="der">
-      <h1 id="Idiomas">Idiomas:</h1>
-      <h2>Inglés</h2>
-      <a href="https://www.cambridgeenglish.org/es/exams-and-tests/young-learners-english/"><img class="ingles"
-          src="../imagenes/ingles.jpg" alt=""></a>
-    </div>
-  </section>
-
-  <hr class="separacion">
-
-  <section>
-    <h1 id="Sk" class="Skills">Skills</h1>
-    <div class="tarjetas">
-      <div class="skl">
-        <h2>PowerPoint</h2>
-        <img src="../imagenes/PowerPoint.png" alt="">
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">¡Hola! Soy <span class="highlight">David Sánchez Lavado</span></h1>
+        <p class="hero-subtitle">Desarrollador Full Stack | Especialista en Aplicaciones Multiplataforma</p>
+        <p class="hero-description">
+          Transformo ideas en soluciones técnicas innovadoras. Especializado en Java, Python y C# con experiencia en infraestructuras empresariales.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+          <a href="https://es.linkedin.com/in/david-sánchez-lavado-116332388" target="_blank" class="btn btn-secondary">LinkedIn</a>
+          <a href="mailto:lavadosanchez.d@gmail.com" class="btn btn-tertiary">Email</a>
+        </div>
       </div>
-      <div class="skl">
-        <h2>Word</h2>
-        <img src="../imagenes/word.jpg" alt="">
-      </div>
-      <div class="skl">
-        <h2>Excel</h2>
-        <img src="../imagenes/excel.jpg" alt="">
-      </div>
-      <div class="skl">
-        <h2>Gimp</h2>
-        <img src="../imagenes/gimp.jpg" alt="">
+      <div class="hero-visual">
+        <div class="code-box">
+          <div class="code-header">
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+          </div>
+          <pre><code>public class Developer {
+  private String[] skills = {
+    "Java", "Python", "C#", 
+    "Kotlin", "SQL"
+  };
+  
+  public void buildApps() {
+    // Passion for clean code
+    return amazing_results;
+  }
+}</code></pre>
+        </div>
       </div>
     </div>
-  </section>
-  <hr class="final">
+  </header>
+
+  <main class="main-content">
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="section-container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Trabajos que demuestran mis habilidades técnicas y creatividad</p>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-badge">Proyecto Académico</div>
+            <h3 class="project-title">Gestor de Series y Películas</h3>
+            <p class="project-description">
+              Aplicación Java con interfaz gráfica para gestión integral de catálogos multimedia. Implementa patrones de diseño, base de datos relacional y validaciones avanzadas.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Swing</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">MVC</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Ver Código</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-badge">Infraestructura</div>
+            <h3 class="project-title">Red Corporativa Distribuida</h3>
+            <p class="project-description">
+              Infraestructura multi-servidor con Windows Server y Ubuntu Linux. Gestión de redes TCP/IP, servicios de directorio y alta disponibilidad.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Windows Server</span>
+              <span class="tech-badge">Linux</span>
+              <span class="tech-badge">TCP/IP</span>
+              <span class="tech-badge">Networking</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Documentación</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-badge">Prácticas Profesionales</div>
+            <h3 class="project-title">Soporte Técnico Empresarial</h3>
+            <p class="project-description">
+              Gestión de infraestructura IT para retailer. Administración de servidores, clonación de sistemas y soporte a usuarios finales en entorno corporativo.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">IT Support</span>
+              <span class="tech-badge">Servidores</span>
+              <span class="tech-badge">Hardware</span>
+              <span class="tech-badge">Redes</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Experiencia</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+      <div class="section-container">
+        <h2 class="section-title">Habilidades & Tecnologías</h2>
+        <p class="section-subtitle">Stack técnico con el que trabajo día a día</p>
+
+        <div class="skills-container">
+          <!-- Backend -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C#</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Kotlin</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database & Infrastructure -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">Data & Infrastructure</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">SQL / PL-SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Windows Server</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Linux / Ubuntu</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Redes TCP/IP</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">Herramientas & Plataformas</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">GitHub / Git</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Android Development</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Web Development</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="soft-skills-section">
+          <h3 class="soft-skills-title">Competencias Blandas</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill">
+              <div class="soft-skill-icon">👥</div>
+              <span>Trabajo en Equipo</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">💬</div>
+              <span>Comunicación Efectiva</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">🔧</div>
+              <span>Resolución de Problemas</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">🚀</div>
+              <span>Proactividad</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">💡</div>
+              <span>Creatividad Técnica</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">📊</div>
+              <span>Pensamiento Analítico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+      <div class="section-container">
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <p class="section-subtitle">Recorrido y trayectoria en el sector tecnológico</p>
+
+        <div class="timeline">
+          <!-- Current -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot active"></div>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Becario — Grupo Gestyde</h3>
+              <p class="timeline-date">Febrero 2026 — Presente</p>
+              <p class="timeline-description">
+                Trabajo en equipo multidisciplinario en entorno corporativo. Responsable de soporte técnico, administración de infraestructuras y mejora continua de procesos internos.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Soporte y mantenimiento de equipos informáticos corporativos</li>
+                <li>Administración proactiva de infraestructuras y redes</li>
+                <li>Participación en proyectos de mejora interna</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Previous -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Técnico Informático en Prácticas — PRG Retail Group</h3>
+              <p class="timeline-date">Marzo 2024 — Junio 2024</p>
+              <p class="timeline-description">
+                Primeras prácticas en empresa real del sector retail. Experiencia hands-on en administración de sistemas y soporte técnico.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Montaje y mantenimiento de equipos informáticos</li>
+                <li>Gestión de servidores Windows Server y sistemas de clonación</li>
+                <li>Administración de redes y soporte técnico a usuarios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title">Formación Académica</h2>
+        <p class="section-subtitle">Certificaciones y titulaciones profesionales</p>
+
+        <div class="education-timeline">
+          <div class="education-card active">
+            <div class="education-badge">En curso</div>
+            <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p class="education-school">I.E.S. Alonso de Avellaneda — Alcalá de Henares</p>
+            <p class="education-detail">
+              Especializado en desarrollo multiplataforma con lenguajes como Java, Python, C#, Kotlin y SQL. Proyectos prácticos con arquitecturas reales.
+            </p>
+            <div class="education-tech">
+              <span>Java</span>
+              <span>Python</span>
+              <span>C#</span>
+              <span>Kotlin</span>
+              <span>Android</span>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-badge">2024</div>
+            <h3>Técnico Medio en Sistemas Microinformáticos y Redes</h3>
+            <p class="education-school">I.E.S. Alonso de Avellaneda — Alcalá de Henares</p>
+            <p class="education-detail">
+              Formación integral en administración de sistemas, redes locales y servidores. Experiencia con Ubuntu, Windows Server y gestión empresarial de infraestructuras.
+            </p>
+            <div class="education-tech">
+              <span>Windows Server</span>
+              <span>Ubuntu Linux</span>
+              <span>TCP/IP</span>
+              <span>Networking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <h2 class="section-title">¿Hablamos?</h2>
+        <p class="section-subtitle">Contáctame para proyectos, oportunidades o simplemente para conectar</p>
+        
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <a href="mailto:lavadosanchez.d@gmail.com">lavadosanchez.d@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Teléfono</h3>
+            <a href="tel:+34691259846">+34 691 25 98 46</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h3>LinkedIn</h3>
+            <a href="https://es.linkedin.com/in/david-sánchez-lavado-116332388" target="_blank">Ver Perfil</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Ubicación</h3>
+            <p>Alcalá de Henares, Madrid</p>
+          </div>
+        </div>
+
+        <div class="cta-final">
+          <a href="mailto:lavadosanchez.d@gmail.com?subject=Oportunidad%20de%20colaboración" class="btn btn-primary btn-large">Enviar Propuesta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 David Sánchez Lavado · Full Stack Developer</p>
+      <div class="footer-links">
+        <a href="https://es.linkedin.com/in/david-sánchez-lavado-116332388" target="_blank">LinkedIn</a>
+        <a href="mailto:lavadosanchez.d@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
