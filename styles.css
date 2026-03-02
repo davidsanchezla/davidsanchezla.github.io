@@ -303,22 +303,6 @@ body {
   font-weight: 600;
 }
 
-.project-links {
-  display: flex;
-  gap: var(--spacing-sm);
-}
-
-.project-link {
-  color: var(--highlight);
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.project-link:hover {
-  text-decoration: underline;
-}
-
 /* Skills */
 .skills-container {
   display: grid;
